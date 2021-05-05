@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: go-captcha
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: gocaptcha
+  template:
+    metadata:
+      labels:
+        app: gocaptcha
+    spec:
+      containers:
+        - name: go-captcha-container
+          image: polylmao/gocaptcha:latest
+          resources:
+            limits:
+              memory: "128Mi"
+              cpu: "500m"
+          ports:
+            - containerPort: 8080
