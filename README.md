@@ -5,8 +5,13 @@
   </h2>
 
 ## Deploy via Docker
+### With Docker Compose:
 ```
 $ docker compose up --build
+```
+### From Docker image:
+```
+$ docker pull polylmao/gocaptcha
 ```
 
 ## Usage:
