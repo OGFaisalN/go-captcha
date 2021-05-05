@@ -11,7 +11,7 @@ $ docker compose up --build
 ```
 ### From Docker image:
 ```
-$ docker pull polylmao/gocaptcha
+$ docker pull polylmao/gocaptcha:latest
 ```
 
 ## Usage:
