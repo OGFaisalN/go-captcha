@@ -20,4 +20,4 @@ After deployment, there are 4 routes that you can visit.
 <img src="images/example.png"/>
 
 ## Contributing:
-If you find any issues, don't hesitate to open an <a href="github.com/PolyLmao/go-captcha/issues/new">issue</a>.
+If you find any issues, don't hesitate to open an <a href="https://github.com/PolyLmao/go-captcha/issues/new">issue</a>.
