@@ -1,0 +1,6 @@
+{
+  "short_name": "Captcha Client",
+  "name": "The client for Go Captcha",
+  "start_url": ".",
+  "display": "standalone"
+}

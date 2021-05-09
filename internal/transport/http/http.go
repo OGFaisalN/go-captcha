@@ -17,6 +17,7 @@ import (
 	"net/http"
 
 	"github.com/go-openapi/runtime/middleware"
+	"github.com/gorilla/handlers"
 	"github.com/gorilla/mux"
 )
 
@@ -34,7 +35,7 @@ func (h *Handler) SetupRoutes() error {
 	h.router.HandleFunc("/images/{code}", h.ServeImage).Methods("GET")
 	h.router.Handle("/docs", documentationMiddleware)
 	h.router.HandleFunc("/swagger", h.ServeDocs)
-	if err := http.ListenAndServe(":8080", h.router); err != nil {
+	if err := http.ListenAndServe(":8080", handlers.CORS()(h.router)); err != nil {
 		return err
 	}
 	return nil

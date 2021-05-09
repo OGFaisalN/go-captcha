@@ -1,0 +1,25 @@
+.background {
+  height: 100vh;
+}
+
+.input-heading {
+  font-size: 2rem;
+  padding-bottom: 2rem;
+}
+
+.input-section {
+  text-align: center;
+  height: 70vh;
+}
+
+.input-box {
+  width: 30rem;
+  min-width: 30rem;
+}
+
+.centered {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+/*# sourceMappingURL=style.css.map */
